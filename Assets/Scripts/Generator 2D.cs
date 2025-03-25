@@ -18,7 +18,7 @@ public class Generator2D : MonoBehaviour
 
     public GameObject GroundPrefab;
     public GameObject HousePrefab;  
-    public GameObject WaterPrefab;
+    
 
     private float[,] grid;
 
@@ -82,10 +82,6 @@ public class Generator2D : MonoBehaviour
             else if (noiseValue < 0.9f)
             {
                 groundRenderer.material.color = Color.green;
-            }
-            else if (noiseValue < 0.5f)
-            {
-                Instantiate(WaterPrefab);
             }
             else
             {
